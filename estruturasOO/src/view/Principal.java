@@ -2,6 +2,7 @@ package view;
 
 import model.Fila;
 import model.Lista;
+import model.Malha;
 import model.Pilha;
 
 public class Principal {
@@ -47,6 +48,9 @@ public class Principal {
 		pilha_a.remover('U');
 		pilha_a.ler();
 		
+		Malha malha_a = new Malha(); 
+		malha_a.construir();
+		malha_a.ler();
 		
 	}
 

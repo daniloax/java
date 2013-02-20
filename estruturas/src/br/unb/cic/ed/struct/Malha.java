@@ -89,9 +89,9 @@ public class Malha {
 				
 			}
 			
-			System.out.println();
-			
 		}
+		
+		System.out.println();
 		
 	}
 
