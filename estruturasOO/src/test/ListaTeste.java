@@ -25,20 +25,42 @@ public class ListaTeste {
 		
 	}
 
+	@Test
 	public void procurar() {
-		// TODO Auto-generated method stub
+		
+		Lista lista = new Lista();
+		lista.inserir('A');
+		Assert.assertTrue(lista.procurar('A'));
+		
 	}
 
+	@Test
 	public void raiz() {
-		// TODO Auto-generated method stub
+		
+		Lista lista = new Lista();
+		lista.inserir('A');
+		Assert.assertEquals(lista.raiz(), 'A');
+		
 	}
 
-	public void remover() {
-		// TODO Auto-generated method stub
+	@Test
+	public void removerDado() {
+		
+		Lista lista = new Lista();
+		lista.inserir('A');
+		lista.remover('A');
+		Assert.assertNull(lista.getNo());
+		
 	}
-
-	public void ler() {
-		// TODO Auto-generated method stub
+	
+	@Test
+	public void removerRaiz() {
+		
+		Lista lista = new Lista();
+		lista.inserir('A');
+		lista.remover();
+		Assert.assertNull(lista.getNo());
+		
 	}
 
 }

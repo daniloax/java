@@ -80,13 +80,12 @@ public class Lista implements Estrutura {
 		Random randomNumbers;
 		int valorCaracter;
 		
-		this.setNo(null);
 		no_b = new Elemento();
 		randomNumbers = new Random();
 		
 		for (int i = 0; i < 20; i++) {
 			
-			valorCaracter = 64 + randomNumbers.nextInt(15);
+			valorCaracter = 64 + randomNumbers.nextInt(22);
 			
 			if ((valorCaracter == 65) || (valorCaracter == 69) || (valorCaracter == 73) || (valorCaracter == 79) || (valorCaracter == 85)) {
 
@@ -115,7 +114,7 @@ public class Lista implements Estrutura {
 		
 		no_a = new Elemento(dado, null);
 		
-		if (this.getNo().equals(null))
+		if (this.getNo() == null)
 			this.setNo(no_a);
 		
 		else {
@@ -128,8 +127,7 @@ public class Lista implements Estrutura {
 			no_b.setProx(no_a);
 				
 		}
-		
-		
+				
 	}
 	
 	public void ordenar() {
@@ -204,17 +202,11 @@ public class Lista implements Estrutura {
 	@Override
 	public Object raiz() {
 		
-		Object raiz;
-		
-		raiz = null;
-		
-		if (this.getNo().equals(null))
-			System.out.printf("lista vazia\n");
+		if (this.getNo() == null)
+			return null;
 		
 		else
-			raiz = this.getNo().getDado();
-		
-		return raiz;
+			return this.getNo().getDado();
 		
 	}
 
@@ -300,7 +292,7 @@ public class Lista implements Estrutura {
 		
 		no_a = this.getNo();
 		
-		if (no_a.equals(null))
+		if (no_a == null)
 			System.out.printf("lista vazia\n");
 		
 		else {
