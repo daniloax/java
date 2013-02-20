@@ -2,6 +2,7 @@ package view;
 
 import model.Fila;
 import model.Lista;
+import model.Pilha;
 
 public class Principal {
 	
@@ -36,6 +37,16 @@ public class Principal {
 		System.out.printf("%s\n", fila_a.procurar('U'));
 		fila_a.remover('U');
 		fila_a.ler();
+		
+		Pilha pilha_a = new Pilha();
+		pilha_a.construir();
+		pilha_a.ler();
+		pilha_a.inserir('A');
+		pilha_a.ler();
+		System.out.printf("%s\n", pilha_a.procurar('U'));
+		pilha_a.remover('U');
+		pilha_a.ler();
+		
 		
 	}
 

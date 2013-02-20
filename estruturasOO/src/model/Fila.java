@@ -137,8 +137,8 @@ public class Fila implements Estrutura {
 		
 		raiz = null;
 		
-		if (this.getNo().equals(null))
-			System.out.printf("lista vazia\n");
+		if (this.getNo() == null)
+			System.out.printf("fila vazia\n");
 		
 		else {
 			

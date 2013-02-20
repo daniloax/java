@@ -182,7 +182,7 @@ public class Lista implements Estrutura {
 			
 			while ((no_a != null) && !flag) {
 				
-				if (no_a.getDado().equals(dado))
+				if (no_a.getDado() == dado)
 					flag = true;
 				
 				else
