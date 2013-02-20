@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class ListaTeste {
+public class ListaTest {
 
 	@Test
 	public void construir() {
